@@ -6,3 +6,10 @@ RUN python3 -m pip install --upgrade pip \
   && python3 -m pip install --no-cache-dir -r /tmp/pip-tmp/requirements.txt \
   && pipx install pre-commit ruff \
   && pre-commit install
+name: "Project Euler"
+env:
+  PYTHONUNBUFFERED: "1"
+
+jobs:
+  project-euler:
+  ...
